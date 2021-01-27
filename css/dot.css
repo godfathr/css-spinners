@@ -1,31 +1,30 @@
 .dot {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background-color: blue;
+    width: 15px;
+    height: 15px;
     display: inline-block;
 }
 
 #dot1 {
-    background-color: rgba(166, 166, 166, 1.0);
-    -webkit-animation: fade 1s linear infinite;
+    background-color: rgba(52, 152, 219, 1.0);
+    -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 1s linear infinite;
+    animation: fade 2s linear infinite;
 }
 
 #dot2 {
-    background-color: rgba(166, 166, 166, 1.0);
-    -webkit-animation: fade 1s linear infinite;
+    background-color: rgba(52, 152, 219, 1.0);
+    -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 1s linear infinite;
+    animation: fade 2s linear infinite;
     animation-delay: 400ms;
 }
 
 #dot3 {
-    background-color: rgba(166, 166, 166, 1.0);
-    -webkit-animation: fade 1s linear infinite;
+    background-color: rgba(52, 152, 219, 1.0);
+    -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 1s linear infinite;
+    animation: fade 2s linear infinite;
     animation-delay: 800ms;
 }
 
@@ -34,7 +33,7 @@
         opacity: 1;
     }
 
-    50% {
+    35% {
         opacity: 0.1;
     }
 
@@ -48,7 +47,7 @@
         opacity: 1;
     }
 
-    50% {
+    35% {
         opacity: 0.1;
     }
 
