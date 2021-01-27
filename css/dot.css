@@ -1,0 +1,58 @@
+.dot {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    display: inline-block;
+}
+
+#dot1 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 1s linear infinite;
+    /* Safari */
+    animation: fade 1s linear infinite;
+}
+
+#dot2 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 1s linear infinite;
+    /* Safari */
+    animation: fade 1s linear infinite;
+    animation-delay: 400ms;
+}
+
+#dot3 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 1s linear infinite;
+    /* Safari */
+    animation: fade 1s linear infinite;
+    animation-delay: 800ms;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
