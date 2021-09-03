@@ -8,30 +8,30 @@
 
 #dot1 {
     background-color: rgba(166, 166, 166, 1.0);
-    -webkit-animation: fade 1s linear infinite;
+    -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 1s linear infinite;
+    animation: fade 2s linear infinite;
 }
 
 #dot2 {
     background-color: rgba(166, 166, 166, 1.0);
-    -webkit-animation: fade 1s linear infinite;
+    -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 1s linear infinite;
-    animation-delay: 800ms;
+    animation: fade 2s linear infinite;
+    animation-delay: 250ms;
 }
 
 #dot3 {
     background-color: rgba(166, 166, 166, 1.0);
-    -webkit-animation: fade 1s linear infinite;
+    -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 1s linear infinite;
-    animation-delay: 600ms;
+    animation: fade 2s linear infinite;
+    animation-delay: 500ms;
 }
 
 @-webkit-keyframes fade {
     0% {
-        opacity: 1;
+        opacity: 0.8;
     }
 
     50% {
@@ -39,12 +39,12 @@
     }
 
     100% {
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 
 @keyframes fade {
-    0% {
+    20% {
         opacity: 1;
     }
 
@@ -52,7 +52,7 @@
         opacity: 0.1;
     }
 
-    100% {
+    80% {
         opacity: 1;
     }
 }
