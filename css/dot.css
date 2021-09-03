@@ -18,7 +18,7 @@
     -webkit-animation: fade 1s linear infinite;
     /* Safari */
     animation: fade 1s linear infinite;
-    animation-delay: 400ms;
+    animation-delay: 800ms;
 }
 
 #dot3 {
@@ -26,7 +26,7 @@
     -webkit-animation: fade 1s linear infinite;
     /* Safari */
     animation: fade 1s linear infinite;
-    animation-delay: 800ms;
+    animation-delay: 600ms;
 }
 
 @-webkit-keyframes fade {
