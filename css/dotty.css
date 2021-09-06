@@ -1,0 +1,74 @@
+.dotty {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(166, 166, 166, 1.0);
+    display: inline-block;
+}
+
+#dotty1 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+}
+
+#dotty2 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+    animation-delay: 250ms;
+}
+
+#dotty3 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+    animation-delay: 500ms;
+}
+
+#dotty4 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+    animation-delay: 750ms;
+}
+
+#dotty5 {
+    background-color: rgba(166, 166, 166, 1.0);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+    animation-delay: 1000ms;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fade {
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+}
