@@ -1,4 +1,17 @@
-.dotty {
+:root {
+    /* --shape-one-color: rgb(238, 12, 12);
+    --shape-two-color: rgb(82, 173, 21);
+    --shape-three-color: rgb(31, 17, 221);
+    --shape-four-color: rgb(22, 20, 20);
+    --shape-five-color: rgb(236, 166, 14); */
+    --shape-one-color: #3c3c3c;
+    --shape-two-color: #3c3c3c;
+    --shape-three-color: #3c3c3c;
+    --shape-four-color: #3c3c3c;
+    --shape-five-color: #3c3c3c;
+}
+
+.smoke {
     border-radius: 50%;
     max-width: 60px;
     max-height: 60px;
@@ -10,42 +23,41 @@
     margin: 40px;
     position: fixed;
     margin-left: 10px;
-    /* border: 1px dotted black; */
 }
 
-#dotty1 {
-    background-color: rgb(238, 12, 12);
+#smoke1 {
+    background-color: var(--shape-one-color);
     -webkit-animation: fade-grow 2s linear infinite;
     /* Safari */
     animation: fade-grow 2s linear infinite;
 }
 
-#dotty2 {
-    background-color: rgb(82, 173, 21);
+#smoke2 {
+    background-color: var(--shape-two-color);
     -webkit-animation: fade-grow 2s linear infinite;
     /* Safari */
     animation: fade-grow 2s linear infinite;
     animation-delay: 250ms;
 }
 
-#dotty3 {
-    background-color: rgb(31, 17, 221);
+#smoke3 {
+    background-color: var(--shape-three-color);
     -webkit-animation: fade-grow 2s linear infinite;
     /* Safari */
     animation: fade-grow 2s linear infinite;
     animation-delay: 500ms;
 }
 
-#dotty4 {
-    background-color: rgb(22, 20, 20);
+#smoke4 {
+    background-color: var(--shape-four-color);
     -webkit-animation: fade-grow 2s linear infinite;
     /* Safari */
     animation: fade-grow 2s linear infinite;
     animation-delay: 750ms;
 }
 
-#dotty5 {
-    background-color: rgb(236, 166, 14);
+#smoke5 {
+    background-color: var(--shape-five-color);
     -webkit-animation: fade-grow 2s linear infinite;
     /* Safari */
     animation: fade-grow 2s linear infinite;
@@ -54,52 +66,50 @@
 
 @-webkit-keyframes fade-grow {
     0% {
-        opacity: 0.8;
-        min-height: 40px;
-        min-width: 40px;
-    }
-
-    50% {
-        opacity: 0.1;
-        min-height: 60px;
-        min-width: 60px;
-    }
-
-    100% {
-        opacity: 0.8;
-        min-height: 20px;
-        min-width: 20px;
-    }
-}
-
-@keyframes fade-grow {
-    20% {
-        opacity: 0.8;
+        opacity: 1;
         min-height: 40px;
         min-width: 40px;
         margin: 20px;
         opacity: 50%;
         margin-left: 10px;
-        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-    50% {
-        opacity: 0.1;
+    90% {
+        opacity: 0;
         min-height: 60px;
         min-width: 60px;
         margin: none;
-        opacity: 100%;
         margin-left: 80px;
-        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
-    80% {
-        opacity: 0.8;
-        min-height: 20px;
-        min-width: 20px;
-        margin:40px;
-        opacity: 20%;
-        margin-left: 20px;
-        margin-top: 0px;
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-grow {
+    0% {
+        opacity: 1;
+        min-height: 40px;
+        min-width: 40px;
+        margin: 20px;
+        opacity: 50%;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    90% {
+        opacity: 0;
+        min-height: 60px;
+        min-width: 60px;
+        margin: none;
+        margin-left: 80px;
+        margin-bottom: 60px;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
