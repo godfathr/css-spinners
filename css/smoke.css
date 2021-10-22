@@ -1,0 +1,115 @@
+:root {
+    /* --shape-one-color: rgb(238, 12, 12);
+    --shape-two-color: rgb(82, 173, 21);
+    --shape-three-color: rgb(31, 17, 221);
+    --shape-four-color: rgb(22, 20, 20);
+    --shape-five-color: rgb(236, 166, 14); */
+    --shape-one-color: #3c3c3c;
+    --shape-two-color: #3c3c3c;
+    --shape-three-color: #3c3c3c;
+    --shape-four-color: #3c3c3c;
+    --shape-five-color: #3c3c3c;
+}
+
+.smoke {
+    border-radius: 50%;
+    max-width: 60px;
+    max-height: 60px;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: rgba(166, 166, 166, 1.0);
+    display: inline-block;
+    transition: max-height 2s ease-in-out;
+    margin: 40px;
+    position: fixed;
+    margin-left: 10px;
+}
+
+#smoke1 {
+    background-color: var(--shape-one-color);
+    -webkit-animation: fade-grow 2s linear infinite;
+    /* Safari */
+    animation: fade-grow 2s linear infinite;
+}
+
+#smoke2 {
+    background-color: var(--shape-two-color);
+    -webkit-animation: fade-grow 2s linear infinite;
+    /* Safari */
+    animation: fade-grow 2s linear infinite;
+    animation-delay: 250ms;
+}
+
+#smoke3 {
+    background-color: var(--shape-three-color);
+    -webkit-animation: fade-grow 2s linear infinite;
+    /* Safari */
+    animation: fade-grow 2s linear infinite;
+    animation-delay: 500ms;
+}
+
+#smoke4 {
+    background-color: var(--shape-four-color);
+    -webkit-animation: fade-grow 2s linear infinite;
+    /* Safari */
+    animation: fade-grow 2s linear infinite;
+    animation-delay: 750ms;
+}
+
+#smoke5 {
+    background-color: var(--shape-five-color);
+    -webkit-animation: fade-grow 2s linear infinite;
+    /* Safari */
+    animation: fade-grow 2s linear infinite;
+    animation-delay: 1000ms;
+}
+
+@-webkit-keyframes fade-grow {
+    0% {
+        opacity: 1;
+        min-height: 40px;
+        min-width: 40px;
+        margin: 20px;
+        opacity: 50%;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    90% {
+        opacity: 0;
+        min-height: 60px;
+        min-width: 60px;
+        margin: none;
+        margin-left: 80px;
+        margin-bottom: 60px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-grow {
+    0% {
+        opacity: 1;
+        min-height: 40px;
+        min-width: 40px;
+        margin: 20px;
+        opacity: 50%;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    90% {
+        opacity: 0;
+        min-height: 60px;
+        min-width: 60px;
+        margin: none;
+        margin-left: 80px;
+        margin-bottom: 60px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

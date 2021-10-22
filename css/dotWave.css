@@ -1,0 +1,99 @@
+:root {
+    --dotw-color: rgba(33, 66, 66, 1.0);
+    --long-anim: 1500ms;
+    --animation-type: ease;
+}
+
+body {
+    position: relative;
+}
+
+.dotw {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+#dotw1 {
+    background-color: var(--dotw-color);
+    -webkit-animation: fadew var(--long-anim) var(--animation-type) infinite;
+    /* Safari */
+    animation: fadew var(--long-anim) var(--animation-type) infinite;
+}
+
+#dotw2 {
+    background-color: var(--dotw-color);
+    -webkit-animation: fadew var(--long-anim) var(--animation-type) infinite;
+    /* Safari */
+    animation: fadew var(--long-anim) var(--animation-type) infinite;
+    animation-delay: 250ms;
+}
+
+#dotw3 {
+    background-color: var(--dotw-color);
+    -webkit-animation: fadew var(--long-anim) var(--animation-type) infinite;
+    /* Safari */
+    animation: fadew var(--long-anim) var(--animation-type) infinite;
+    animation-delay: 500ms;
+}
+
+#dotw4 {
+    background-color: var(--dotw-color);
+    -webkit-animation: fadew var(--long-anim) var(--animation-type) infinite;
+    /* Safari */
+    animation: fadew var(--long-anim) var(--animation-type) infinite;
+    animation-delay: 750ms;
+}
+
+#dotw5 {
+    background-color: var(--dotw-color);
+    -webkit-animation: fadew var(--long-anim) var(--animation-type) infinite;
+    /* Safari */
+    animation: fadew var(--long-anim) var(--animation-type) infinite;
+    animation-delay: 1000ms;
+}
+
+@-webkit-keyframes fadew {
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+        width: 1rem;
+        height: 1rem;
+        margin: 1.0rem;
+    }
+
+    80% {
+        opacity: 1;
+        width: 1rem;
+        height: 1rem;
+        margin: 1.0rem;
+    }
+}
+
+@keyframes fadew {
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+        width: 1rem;
+        height: 1rem;
+        margin: 1.0rem;
+        border-radius: 20%;
+    }
+
+    80% {
+        opacity: 0.1;
+        width: 1rem;
+        height: 1rem;
+        margin: 1.0rem;
+        border-radius: 20%;
+    }
+}

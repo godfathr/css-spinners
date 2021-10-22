@@ -1,20 +1,23 @@
+:root {
+    --dot-color: rgba(99, 99, 99, 1.0);
+}
+
 .dot {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background-color: blue;
+    width: 20px;
+    height: 20px;
     display: inline-block;
 }
 
 #dot1 {
-    background-color: rgba(166, 166, 166, 1.0);
+    background-color: var(--dot-color);
     -webkit-animation: fade 2s linear infinite;
     /* Safari */
-    animation: fade 2s linear infinite;
+    animation: fade 2000ms linear infinite;
 }
 
 #dot2 {
-    background-color: rgba(166, 166, 166, 1.0);
+    background-color: var(--dot-color);
     -webkit-animation: fade 2s linear infinite;
     /* Safari */
     animation: fade 2s linear infinite;
@@ -22,11 +25,27 @@
 }
 
 #dot3 {
-    background-color: rgba(166, 166, 166, 1.0);
+    background-color: var(--dot-color);
     -webkit-animation: fade 2s linear infinite;
     /* Safari */
     animation: fade 2s linear infinite;
     animation-delay: 500ms;
+}
+
+#dot4 {
+    background-color: var(--dot-color);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+    animation-delay: 750ms;
+}
+
+#dot5 {
+    background-color: var(--dot-color);
+    -webkit-animation: fade 2s linear infinite;
+    /* Safari */
+    animation: fade 2s linear infinite;
+    animation-delay: 1000ms;
 }
 
 @-webkit-keyframes fade {
